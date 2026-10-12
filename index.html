@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Krishna Patel — Product Designer</title>
+  <meta name="description" content="Krishna Patel, Product Designer." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!--
+    ASSET PLACEHOLDERS
+    Every image sits inside a .media box that shows its placeholder label.
+    Drop the real file at the path in the <img src> and it appears automatically.
+    Links marked data-todo="..." still point to "#" and need the real URL.
+  -->
+
+  <!-- ============ HERO ============ -->
+  <header class="hero fold" id="home">
+    <nav class="nav">
+      <a class="nav__logo media media--logo" href="#home" data-label="LOGO" aria-label="Krishna Patel — Home">
+        <img src="assets/images/logo.png" alt="Krishna Patel logo" onerror="this.remove()" />
+      </a>
+
+      <button class="nav__toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span>
+      </button>
+
+      <ul class="nav__links" id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="hero__content">
+      <span class="pill pill--dark">Hello, I'm Krishna Patel 👋</span>
+      <h1 class="hero__title">Product Designer</h1>
+      <p class="hero__lede">
+        <strong>4+ years of experience</strong> in the design field, creating
+        intuitive user interfaces and meaningful user experiences.
+      </p>
+      <div class="hero__actions">
+        <a class="btn btn--light" href="assets/resume.pdf" target="_blank" rel="noopener" data-todo="RESUME_PDF">Resume</a>
+        <a class="btn btn--dark" href="#work">Project</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="content">
+
+    <!-- ============ FEATURED WORK ============ -->
+    <section class="section work" id="work">
+      <div class="work__fold">
+      <div class="section__head">
+        <span class="pill">Featured Work</span>
+        <h2 class="display">
+          <span class="muted">I'll help</span> your project <span class="muted">shine</span>
+        </h2>
+      </div>
+
+        <div class="work__grid">
+        <!-- Build Me Up (wide) -->
+        <article class="card card--wide">
+          <div class="card__media media media--dark" data-label="PLACEHOLDER: build-me-up-cover.png">
+            <img src="assets/images/build-me-up-cover.png" alt="Build Me Up app screens" onerror="this.remove()" />
+          </div>
+          <div class="card__body">
+            <div>
+              <h3 class="card__title">Build Me Up</h3>
+              <p class="card__desc">App which helps to gain weight</p>
+            </div>
+            <a class="btn btn--black" href="#" data-todo="BUILD_ME_UP_CASE_STUDY_URL">View Project</a>
+          </div>
+        </article>
+
+        <!-- Sharp (compact) -->
+        <article class="card card--compact">
+          <a class="card__link" href="#" data-todo="SHARP_CASE_STUDY_URL" aria-label="View Sharp project">
+            <div class="card__media media media--light media--contain" data-label="PLACEHOLDER: sharp-cover.jpg">
+              <img src="assets/images/sharp-cover.jpg" alt="Sharp website on laptop and phone" onerror="this.remove()" />
+            </div>
+            <div class="card__body">
+              <h3 class="card__title">Sharp</h3>
+              <p class="card__desc">Website redesign with e-commerce</p>
+            </div>
+          </a>
+        </article>
+
+        </div>
+      </div>
+
+      <div class="work__fold">
+        <div class="work__grid">
+        <!-- Social Savvy Bot (compact) -->
+        <article class="card card--compact">
+          <a class="card__link" href="#" data-todo="SOCIAL_SAVVY_CASE_STUDY_URL" aria-label="View Social Savvy Bot project">
+            <div class="card__media media media--light" data-label="PLACEHOLDER: social-savvy-cover.png">
+              <img src="assets/images/social-savvy-cover.png" alt="Social Savvy Bot on a laptop" onerror="this.remove()" />
+            </div>
+            <div class="card__body">
+              <h3 class="card__title">Social Savvy Bot</h3>
+              <p class="card__desc">Voiceflow-powered chatbot</p>
+            </div>
+          </a>
+        </article>
+
+        <!-- Gen AI Chatbot (wide) -->
+        <article class="card card--wide">
+          <div class="card__media media media--dark media--contain" data-label="PLACEHOLDER: gen-ai-chatbot-cover.jpg">
+            <img src="assets/images/gen-ai-chatbot-cover.jpg" alt="Gen AI Chatbot robot illustration" onerror="this.remove()" />
+          </div>
+          <div class="card__body">
+            <div>
+              <h3 class="card__title">Gen AI Chatbot</h3>
+              <p class="card__desc">Research on Gen AI Chatbot in Pharmacy</p>
+            </div>
+            <a class="btn btn--black" href="#" data-todo="GEN_AI_CHATBOT_CASE_STUDY_URL">View Project</a>
+          </div>
+        </article>
+      </div>
+      </div>
+    </section>
+
+    <!-- ============ STATEMENT ============ -->
+    <section class="section statement fold">
+      <p>
+        Where UX thinking meets UI execution.
+        <span class="muted">I turn user problems into well-optimized solutions through clear UX and strong, intentional visual design.</span>
+        I&nbsp;design scalable, user-centered product experiences.
+      </p>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="about fold" id="about">
+      <div class="about__inner">
+        <div class="about__portrait media media--light" data-label="PLACEHOLDER: krishna-portrait.jpg">
+          <img src="assets/images/krishna-portrait.jpg" alt="Portrait of Krishna Patel" onerror="this.remove()" />
+        </div>
+        <div class="about__text">
+          <span class="pill">About</span>
+          <h2 class="about__title">
+            <span class="muted">I am a</span> Product Designer <span class="muted">with a Strong Visual Design</span>
+          </h2>
+          <p class="about__body">
+            With a background in graphic design, I bring a strong visual foundation into product design.
+            I combine UX thinking, user research, and clear UI execution to deliver user-centered,
+            scalable product experiences that align with both user needs and business goals.
+          </p>
+          <dl class="stats">
+            <div class="stat">
+              <dt>Years of Design Experience</dt>
+              <dd>4+</dd>
+            </div>
+            <div class="stat">
+              <dt>Projects Completed</dt>
+              <dd>10+</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ WHY ME ============ -->
+    <section class="section why fold">
+      <div class="section__head">
+        <span class="pill">Why me?</span>
+        <h2 class="display">
+          <span class="muted">I’ll help</span> your product <span class="muted">grow and scale</span>
+        </h2>
+      </div>
+
+      <div class="why__grid">
+        <article class="why-card">
+          <div class="why-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+          </div>
+          <h3>Problem-First Thinking</h3>
+          <p>I start by understanding the problem and user needs through research and insights, ensuring every design decision is purposeful and user-centered.</p>
+        </article>
+        <article class="why-card">
+          <div class="why-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M3 20l1.3-3.9A8 8 0 1 1 7.7 19.3L3 20z"/><path d="M8 12h.01M12 12h.01M16 12h.01"/></svg>
+          </div>
+          <h3>Balanced UX and UI</h3>
+          <p>I combine UX strategy with strong visual design to create intuitive flows, clear interfaces, and experiences that feel both usable and polished.</p>
+        </article>
+        <article class="why-card">
+          <div class="why-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="7"/><path d="M21 21l-5.5-5.5M10.5 7.5v6M7.5 10.5h6"/></svg>
+          </div>
+          <h3>Team Collaboration</h3>
+          <p>I work closely with developers, product managers, and stakeholders to align design with feasibility, goals, and outcomes.</p>
+        </article>
+      </div>
+
+      <!-- ============ SKILLS STRIP ============ -->
+      <div class="marquee" aria-label="Skills">
+        <div class="marquee__track">
+          <ul class="marquee__list">
+            <li>UI UX Design</li>
+            <li>Design Systems</li>
+            <li>Wireframing &amp; Prototyping</li>
+            <li>Usability Testing</li>
+            <li>UX Research</li>
+          </ul>
+          <!-- duplicate for seamless loop -->
+          <ul class="marquee__list" aria-hidden="true">
+            <li>UI UX Design</li>
+            <li>Design Systems</li>
+            <li>Wireframing &amp; Prototyping</li>
+            <li>Usability Testing</li>
+            <li>UX Research</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer" id="contact">
+    <div class="footer__inner">
+      <div class="footer__cta">
+        <h2>
+          <span class="muted">Ready to create something</span><br />
+          awesome together?
+        </h2>
+        <a class="btn btn--light" href="#" data-todo="LETS_CONNECT_URL">Let's connect</a>
+      </div>
+
+      <div class="footer__cols">
+        <div>
+          <h3>Pages</h3>
+          <ul>
+            <li><a href="assets/resume.pdf" target="_blank" rel="noopener" data-todo="RESUME_PDF">Resume</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Socials</h3>
+          <ul>
+            <li><a href="#" target="_blank" rel="noopener" data-todo="BEHANCE_URL">Behance</a></li>
+            <li><a href="#" target="_blank" rel="noopener" data-todo="LINKEDIN_URL">LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
