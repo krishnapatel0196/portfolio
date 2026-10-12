@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Work — Krishna Patel, Product Designer</title>
-  <meta name="description" content="Selected product design projects by Krishna Patel." />
+  <meta name="description" content="Featured product design projects by Krishna Patel." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
@@ -12,8 +12,8 @@
 </head>
 <body>
 
-  <!-- ============ HEADER ============ -->
-  <header class="page-header">
+  <!-- ============ HERO ============ -->
+  <header class="hero fold">
     <nav class="nav">
       <a class="nav__logo media media--logo" href="index.html" data-label="LOGO" aria-label="Krishna Patel — Home">
         <img src="assets/images/logo.png" alt="Krishna Patel logo" onerror="this.remove()" />
@@ -31,70 +31,120 @@
       </ul>
     </nav>
 
-    <div class="page-header__content">
-      <span class="pill pill--dark">Work</span>
-      <h1 class="page-header__title">Selected Projects</h1>
+    <div class="hero__content">
+      <h1 class="hero__title hero__title--page">Featured Work</h1>
+      <p class="hero__lede hero__lede--page">
+        Take a look at my projects and let’s transform your ideas into impactful designs
+      </p>
     </div>
   </header>
 
   <main class="content">
 
     <!-- ============ PROJECTS ============ -->
-    <section class="section projects" aria-label="Projects">
-      <div class="projects__grid">
+    <section class="section work work--page" id="work" aria-label="Projects">
 
-        <article class="card project-card">
-          <div class="card__media media media--dark media--contain">
-            <img src="assets/images/build-me-up-cover.jpg" alt="Build Me Up app screens" onerror="this.remove()" />
-          </div>
-          <div class="card__body">
-            <div>
-              <h2 class="card__title">Build Me Up</h2>
-              <p class="card__desc">App which helps to gain weight</p>
+      <!-- Row 1: Build Me Up (wide) + Usability Testing Report -->
+      <div class="work__fold">
+        <div class="work__grid">
+          <article class="card card--wide">
+            <div class="card__media media media--dark media--contain" data-label="PLACEHOLDER: build-me-up-cover.jpg">
+              <img src="assets/images/build-me-up-cover.jpg" alt="Build Me Up app screens" onerror="this.remove()" />
             </div>
-            <a class="btn btn--black" href="#" data-todo="BUILD_ME_UP_CASE_STUDY_URL">View Project</a>
-          </div>
-        </article>
-
-        <article class="card project-card">
-          <div class="card__media media media--light media--contain">
-            <img src="assets/images/sharp-cover.jpg" alt="Sharp website on laptop and phone" onerror="this.remove()" />
-          </div>
-          <div class="card__body">
-            <div>
-              <h2 class="card__title">Sharp</h2>
-              <p class="card__desc">Website redesign with e-commerce</p>
+            <div class="card__body">
+              <div>
+                <h2 class="card__title">Build Me Up</h2>
+                <p class="card__desc">App which helps to gain weight</p>
+              </div>
+              <a class="btn btn--black" href="#" data-todo="BUILD_ME_UP_CASE_STUDY_URL">View Project</a>
             </div>
-            <a class="btn btn--black" href="#" data-todo="SHARP_CASE_STUDY_URL">View Project</a>
-          </div>
-        </article>
+          </article>
 
-        <article class="card project-card">
-          <div class="card__media media media--light media--contain">
-            <img src="assets/images/social-savvy-cover.jpg" alt="Social Savvy Bot on a laptop" onerror="this.remove()" />
-          </div>
-          <div class="card__body">
-            <div>
-              <h2 class="card__title">Social Savvy Bot</h2>
-              <p class="card__desc">Voiceflow-powered chatbot</p>
+          <article class="card card--compact">
+            <a class="card__link" href="#" data-todo="USABILITY_TESTING_URL" aria-label="View Usability Testing Report">
+              <div class="card__media media media--light media--contain" data-label="PLACEHOLDER: usability-testing-cover.jpg">
+                <img src="assets/images/usability-testing-cover.jpg" alt="Build Me Up app screens used in usability testing" onerror="this.remove()" />
+              </div>
+              <div class="card__body">
+                <h2 class="card__title">Usability Testing Report</h2>
+                <p class="card__desc">Build Me Up App Testing</p>
+              </div>
+            </a>
+          </article>
+        </div>
+      </div>
+
+      <!-- Row 2: Social Savvy Bot + Gen AI Chatbot (wide) -->
+      <div class="work__fold">
+        <div class="work__grid">
+          <article class="card card--compact">
+            <a class="card__link" href="#" data-todo="SOCIAL_SAVVY_CASE_STUDY_URL" aria-label="View Social Savvy Bot project">
+              <div class="card__media media media--light media--contain" data-label="PLACEHOLDER: social-savvy-cover.jpg">
+                <img src="assets/images/social-savvy-cover.jpg" alt="Social Savvy Bot on a laptop" onerror="this.remove()" />
+              </div>
+              <div class="card__body">
+                <h2 class="card__title">Social Savvy Bot</h2>
+                <p class="card__desc">Voiceflow-powered chatbot</p>
+              </div>
+            </a>
+          </article>
+
+          <article class="card card--wide">
+            <div class="card__media media media--dark media--contain" data-label="PLACEHOLDER: gen-ai-chatbot-cover.jpg">
+              <img src="assets/images/gen-ai-chatbot-cover.jpg" alt="Gen AI Chatbot robot illustration" onerror="this.remove()" />
             </div>
-            <a class="btn btn--black" href="#" data-todo="SOCIAL_SAVVY_CASE_STUDY_URL">View Project</a>
-          </div>
-        </article>
-
-        <article class="card project-card">
-          <div class="card__media media media--dark media--contain">
-            <img src="assets/images/gen-ai-chatbot-cover.jpg" alt="Gen AI Chatbot robot illustration" onerror="this.remove()" />
-          </div>
-          <div class="card__body">
-            <div>
-              <h2 class="card__title">Gen AI Chatbot</h2>
-              <p class="card__desc">Research on Gen AI Chatbot in Pharmacy</p>
+            <div class="card__body">
+              <div>
+                <h2 class="card__title">Gen AI Chatbot</h2>
+                <p class="card__desc">Research on Gen AI Chatbot in Pharmacy</p>
+              </div>
+              <a class="btn btn--black" href="#" data-todo="GEN_AI_CHATBOT_CASE_STUDY_URL">View Project</a>
             </div>
-            <a class="btn btn--black" href="#" data-todo="GEN_AI_CHATBOT_CASE_STUDY_URL">View Project</a>
-          </div>
-        </article>
+          </article>
+        </div>
+      </div>
 
+      <!-- Row 3: three equal cards -->
+      <div class="work__fold">
+        <div class="work__grid work__grid--three">
+          <article class="card card--compact">
+            <a class="card__link" href="#" data-todo="SHARP_CASE_STUDY_URL" aria-label="View Sharp project">
+              <div class="card__media media media--light media--contain" data-label="PLACEHOLDER: sharp-cover.jpg">
+                <img src="assets/images/sharp-cover.jpg" alt="Sharp website on laptop and phone" onerror="this.remove()" />
+              </div>
+              <div class="card__body">
+                <h2 class="card__title">Sharp</h2>
+                <p class="card__desc">Website redesign with e-commerce</p>
+              </div>
+            </a>
+          </article>
+
+          <article class="card card--compact">
+            <a class="card__link" href="#" data-todo="STEPSTAGE_CASE_STUDY_URL" aria-label="View StepStage App project">
+              <div class="card__media media media--light media--contain" data-label="PLACEHOLDER: stepstage-cover.jpg">
+                <img src="assets/images/stepstage-cover.jpg" alt="StepStage app screens" onerror="this.remove()" />
+              </div>
+              <div class="card__body">
+                <h2 class="card__title">StepStage App</h2>
+                <p class="card__desc">Step Count Gamification App</p>
+              </div>
+            </a>
+          </article>
+
+          <!-- Not clickable yet -->
+          <article class="card card--compact card--soon">
+            <div class="card__link">
+              <div class="card__media media media--light media--contain" data-label="PLACEHOLDER: tasty-app-cover.jpg">
+                <img src="assets/images/tasty-app-cover.jpg" alt="Tasty App screens on a tablet and smart fridge" onerror="this.remove()" />
+              </div>
+              <div class="card__body">
+                <h2 class="card__title">Tasty App</h2>
+                <p class="card__desc">App design for non-traditional platforms</p>
+              </div>
+            </div>
+            <span class="card__soon">Coming Soon</span>
+          </article>
+        </div>
       </div>
 
       <!-- ============ SKILLS STRIP ============ -->
@@ -118,7 +168,6 @@
         </div>
       </div>
     </section>
-
   </main>
 
   <!-- ============ FOOTER ============ -->
