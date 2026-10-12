@@ -566,8 +566,7 @@ h1, h2, h3, p, dl, dd { margin: 0; }
 }
 .intro__portrait > img { object-position: center top; }
 
-.beyond { padding-block: clamp(56px, 7vw, 120px) 0; }
-.beyond--next { padding-block: clamp(24px, 3vw, 48px) clamp(72px, 9vw, 160px); }
+.beyond { padding-block: clamp(56px, 7vw, 120px) clamp(72px, 9vw, 160px); }
 .beyond__title {
   text-align: center;
   font-size: clamp(32px, 3.1vw, 54px);
@@ -581,7 +580,7 @@ h1, h2, h3, p, dl, dd { margin: 0; }
   border-radius: clamp(32px, 5.2vw, 90px);
   padding: clamp(32px, 6.4vw, 110px) clamp(24px, 7vw, 120px) clamp(40px, 5.2vw, 90px);
 }
-.beyond--next .beyond-card { margin-top: 0; }
+.beyond-card + .beyond-card { margin-top: clamp(24px, 3vw, 48px); }
 .beyond-card__title {
   text-align: center;
   font-size: clamp(24px, 2.1vw, 36px);
@@ -755,19 +754,6 @@ h1, h2, h3, p, dl, dd { margin: 0; }
   .intro__stats { margin-top: clamp(18px, 4.4vh, 64px); }
   .intro__stats dd { font-size: clamp(30px, min(3vw, 5.4vh), 52px); }
   .intro__portrait { width: min(100%, calc((var(--fold-h) - 220px) * 352 / 418)); justify-self: center; }
-
-  /* About page: each Beyond Design card gets its own screen */
-  .beyond__title { font-size: clamp(30px, min(3.1vw, 5.6vh), 54px); }
-  .beyond-card {
-    width: 100%;
-    margin-top: clamp(16px, 3.4vh, 72px);
-    padding: clamp(24px, 5.4vh, 110px) clamp(32px, 7vw, 120px) clamp(28px, 6vh, 100px);
-  }
-  .beyond-card__title { font-size: clamp(22px, min(2.1vw, 3.8vh), 36px); }
-  .beyond-card__inner { margin-top: clamp(16px, 4.4vh, 72px); }
-  .beyond-card__text { font-size: clamp(15px, min(1.5vw, 2.8vh), 25px); line-height: 1.8; }
-  .mosaic { width: min(100%, calc((var(--fold-h) - 340px) * 422 / 350)); justify-self: end; }
-  .why--about.fold { padding-bottom: var(--fold-pad); }
 
   /* Featured work: two rows of 2 projects, 40px apart like the cards beside each other */
   .work { padding-block: var(--fold-pad); }
