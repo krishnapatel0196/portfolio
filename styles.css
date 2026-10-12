@@ -289,6 +289,51 @@ h1, h2, h3, p, dl, dd { margin: 0; }
 .card--compact .card__body { padding: clamp(16px, 1.6vw, 24px) clamp(20px, 2.4vw, 40px) clamp(14px, 1.3vw, 20px); }
 .card--compact .card__desc { margin-top: 6px; }
 
+/* ---------- Work page ---------- */
+.page-header {
+  background: var(--black);
+  color: var(--white);
+}
+.page-header__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: clamp(48px, 7vw, 110px) 16px clamp(64px, 9vw, 140px);
+}
+.page-header__title {
+  margin-top: 24px;
+  font-size: clamp(40px, 4.4vw, 72px);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.05;
+}
+.nav__links a[aria-current="page"] { opacity: 0.55; }
+
+.projects { padding-top: clamp(48px, 6vw, 96px); }
+.projects__grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 40px;
+  max-width: var(--container);
+  margin: 0 auto;
+}
+.project-card { display: flex; flex-direction: column; }
+.project-card .card__media { aspect-ratio: 4 / 3; }
+.project-card .card__body {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 20px;
+  padding: clamp(20px, 2vw, 32px) clamp(16px, 2vw, 28px) clamp(14px, 1.4vw, 20px);
+}
+.project-card .btn {
+  flex-shrink: 0;
+  height: clamp(44px, 3.2vw, 54px);
+  padding-inline: clamp(22px, 1.8vw, 30px);
+  font-size: clamp(15px, 1.05vw, 18px);
+}
+
 /* ---------- Statement ---------- */
 .statement {
   padding-block: clamp(72px, 11vw, 200px);
@@ -495,6 +540,8 @@ h1, h2, h3, p, dl, dd { margin: 0; }
 
   .about__inner { grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); }
   .why__grid { gap: 20px; }
+  .projects__grid { gap: 24px; }
+  .project-card .card__body { flex-direction: column; align-items: flex-start; }
   .why-card { padding: 32px 28px 36px; }
 }
 
@@ -563,6 +610,9 @@ h1, h2, h3, p, dl, dd { margin: 0; }
   .stats { margin-top: 40px; gap: 24px 48px; }
 
   .why-card { display: block; padding: 28px 24px 32px; }
+
+  .projects__grid { grid-template-columns: minmax(0, 1fr); }
+  .project-card .card__body { padding: 20px 16px 16px; }
   .why-card h3 { margin-top: 24px; }
   .why-card p { margin-top: 14px; }
 
